@@ -1,0 +1,108 @@
+/*-------------------------------------demo----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    //line-height: 1 !important;
+ }
+
+ /*-----------header-------------------*/
+.header{
+    width: 100%;
+    height: 60px;
+    padding-top: 1px;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 15px 15px;
+    box-shadow: 5px 5px 10px 5px #5F5959;
+    border-bottom: 2px solid #0091d5;
+    position: fixed;
+    z-index: 10000;
+}
+.headwrap{
+    width: auto;/*то же что и 100%*/
+    max-width: 960px;/*максимальная ширина обёртки*/
+    background-color:  #fff;
+    margin: 0px auto;
+    position: relative;
+    background: none;
+}
+
+/*=================logo===========================*/
+.logo{
+    line-height: 1 !important;
+    margin: 0 auto;
+    text-align: center;
+}
+@font-face {
+    font-family: 'CevicheOne-Regular';
+    src: url('../fonts/CevicheOne-Regular.eot');
+    src: url('../fonts/CevicheOne-Regular.eot?#iefix') format("embedded-opentype"),
+        url('../fonts/CevicheOne-Regular.woff') format('woff'), 
+        url('../fonts/CevicheOne-Regular.ttf') format('truetype'), 
+        url('../fonts/CevicheOne-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ @font-face {
+    font-family: 'CaslonItalic';
+    src: url('../fonts/CaslonItalic.eot');
+    src: url('../fonts/CaslonItalic.eot?#iefix') format("embedded-opentype"),
+        url('../fonts/CaslonItalic.woff') format('woff'), 
+        url('../fonts/CaslonItalic.ttf') format('truetype'), 
+        url('../fonts/CaslonItalic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ }
+.logotip a{
+    font-family: 'CevicheOne-Regular';
+    color: #0091d5;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+    text-decoration: none;
+}
+.logotip span{
+    font-family: 'CevicheOne-Regular';
+    color: #ffa073;
+}
+.wraper {
+    
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    width: auto;/*то же что и 100%*/
+    max-width: 960px;/*максимальная ширина обёртки*/
+    margin-bottom: 70px;
+}
+.wraper h1 {
+    text-align: center;
+    margin: 10px 0 30px 0;
+     color: #64ACDF;
+    text-shadow: -1px -1px #666, 1px 1px #FFF;
+	font-family: arial;
+
+}
+
+.back{
+    text-shadow: -1px -1px #666, 1px 1px #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: red;
+	font-family: arial;
+}
+
+
+.submit{
+    margin-bottom: 15px;
+}
