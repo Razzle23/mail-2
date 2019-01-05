@@ -29,6 +29,11 @@ if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') {
     $mail->Body = $body;
     $mail->WordWrap = 50;
     $mail->AddAddress($email);
+    if (isset($_FILES['uploaded_file']) &&
+    $_FILES['uploaded_file']['error'] == UPLOAD_ERR_OK) {
+    $mail->AddAttachment($_FILES['uploaded_file']['tmp_name'],
+                         $_FILES['uploaded_file']['name']);
+}
     if(!$mail->send()) {
       echo '<div class="alert alert-danger"><p class="text-center"><strong>Ваше сообщение не отправлено</strong></p></div>';
       exit;
