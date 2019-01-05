@@ -30,6 +30,7 @@
 <a class="back" href="/php-i-mysql/prostoj-chat-na-ajax"><< к статье</a>
 <div class="row">
         <div class="col-md-12 col-sm-12">
+        <form method="post" action="send.php" enctype="multipart/form-data">
             <form class="form-horizontal" role="form">
                 <div class="form-group">
                     <label for="email" class="col-sm-3 col-sm-offset-1 control-label">Ваш email</label>
@@ -54,13 +55,15 @@
                     </div>
                 </div>
              </form>
-            
+            <input type="file" name="uploaded_file" id="uploaded_file" />
+            <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
             <div class="col-sm-offset-4 col-sm-4 col-xs-offset-2  col-xs-7">
                  <button  class="submit btn btn-primary col-sm-12 col-xs-12 btn-lg">Отправить письмо</button>
             </div>
             <div class="load col-sm-offset-4 col-sm-4 center" style="display: none;">                                 
                     <img class="img-responsive" src="css/preload.gif">
             </div>
+            </form>
 <!-- Modal bootstrap-->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top: 70px;">
   <div class="modal-dialog">
