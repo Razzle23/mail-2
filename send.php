@@ -33,6 +33,7 @@ if($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') {
     $_FILES['uploaded_file']['error'] == UPLOAD_ERR_OK) {
     $mail->AddAttachment($_FILES['uploaded_file']['tmp_name'],
                          $_FILES['uploaded_file']['name']);
+        echo '<div class="alert alert-success"><p class="text-center"><strong>Ваш файл отправлен</strong></p></div>';
 }
     if(!$mail->send()) {
       echo '<div class="alert alert-danger"><p class="text-center"><strong>Ваше сообщение не отправлено</strong></p></div>';
